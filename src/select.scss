@@ -1,0 +1,88 @@
+
+.home-select {
+  position: relative;
+  .select-group {
+      z-index: 3;
+      position: relative;
+  }
+  .dropdown-menu {
+      transition: transform 1s ease;
+      position: absolute;
+      /* background: cadetblue; */
+      text-align: center;
+      left: 7px;
+      .dropdown-menu-item {
+          background-color: white;
+          box-sizing: border-box;
+          width: 116px;
+          height: 32px;
+          box-shadow: none;
+          border: 1.2px solid #000;
+          position: absolute;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: all 1s ease;
+          cursor: pointer;
+          button {
+              width: 100%;
+              height: 100%;
+              background: transparent;
+              box-shadow: none;
+              border: none;
+              cursor: pointer;
+          }
+      }
+      &.hidden {
+          transform: translateY(-25px);
+      }
+      &.active {
+          transform: translate(-7px, 10px);
+      }
+  }
+  .select-group {
+      button {
+          cursor: pointer;
+          background-color: white;
+          width: 116px;
+          height: 32px;
+          box-shadow: none;
+          border: 1.2px solid black;
+      }
+      .select-second-border {
+          // border: 1.3px solid #1d1d1d;
+          position: absolute;
+          width: 116px;
+          height: 32px;
+          z-index: -1;
+          top: 7px;
+          left: 7px;
+      }
+  }
+}
+
+@media (max-width: 600px) {
+  .home-select {
+      .dropdown-menu {
+          .dropdown-menu-item {
+              width: 70px;
+              .text{
+                  font-size: 0.8rem;
+                  font-weight: 500;
+              }
+             
+          }
+      }
+      .select-group {
+          button {
+              outline: none;
+              width: 70px;
+              font-size: 0.8rem;
+              .text{
+                  font-size: 0.8rem;
+                  font-weight: 500;
+              }
+          }
+      }
+  }
+}
