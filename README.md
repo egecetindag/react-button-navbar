@@ -9,7 +9,7 @@ npm install --save react-button-navbar
 yarn add react-button-navbar
 ```
 
-![demo for navbar](demo/demo.gif)
+![demo for navbar](https://raw.githubusercontent.com/egecetindag/react-button-navbar/master/demo/demo.gif)
 
 
 ## Usage
